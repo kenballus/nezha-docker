@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 WORKDIR /app
-RUN apt -y update && apt -y upgrade && apt -y install git clang make autoconf autopoint libtool cmake golang wget libssl-dev && git clone https://github.com/nezha-dt/nezha
+RUN apt -y update && apt -y upgrade && apt -y install git clang make autoconf autopoint libtool cmake golang wget libssl-dev libxml2-dev libpcre3-dev libbz2-dev libgcrypt-dev && git clone https://github.com/nezha-dt/nezha
 
 WORKDIR /app/nezha
 RUN git checkout v0.1
