@@ -4,4 +4,4 @@
 This is a Dockerfile that clones and builds the original NEZHA code, guaranteed working as of June 2023.
 
 To build, run `docker build .`
-To launch a shell with everything ready to start [the NEZHA examples](https://github.com/nezha-dt/nezha/tree/v0.1/examples/src/apps/helloworld), run `docker run $DOCKER_HASH`, where `$DOCKER_HASH` is the image hash from the build step.
+To launch a shell with everything ready to start [the NEZHA examples](https://github.com/nezha-dt/nezha/tree/v0.1/examples/src/apps/helloworld), run `docker run -it $DOCKER_HASH`, where `$DOCKER_HASH` is the image hash from the build step.
